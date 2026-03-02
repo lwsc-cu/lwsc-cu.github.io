@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UIUC Young Democratic Socialists of America - Building power and fighting for democratic socialism in Champaign-Urbana.">
+    <title>UIUC YDSA | Solidarity Forever</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">UIUC <span class="accent">YDSA</span></span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="poli-ed.html" class="nav-link">Poli-Ed</a></li>
+                    <li><a href="newsletter.html" class="nav-link">Newsletter</a></li>
+                    <li><a href="get-involved.html" class="btn-primary nav-btn">Get Involved</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="ph-bold ph-moon dark-icon hidden"></i>
+                    <i class="ph-bold ph-sun light-icon"></i>
+                </button>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="ph-bold ph-list menu-icon"></i>
+                    <i class="ph-bold ph-x close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content for Home -->
+    <main class="page-wrapper main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">BUILDING POWER IN CHAMPAIGN-URBANA</h1>
+                    <p class="hero-subtitle">We are the Young Democratic Socialists of America chapter at the University
+                        of Illinois. Join us in the fight for a better world.</p>
+                    <div class="hero-cta">
+                        <a href="get-involved.html" class="btn btn-lg btn-primary">Join the Movement <i
+                                class="ph-bold ph-arrow-right"></i></a>
+                        <a href="about.html" class="btn btn-lg btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief Intro / Latest highlights -->
+        <section class="section bg-brand">
+            <div class="container text-center">
+                <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">SOLIDARITY FOREVER.</h2>
+                <p style="font-size: 1.25rem; font-weight: 500; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                    Whether you're new to socialism or a seasoned organizer, there's a place for you here. Educate,
+                    agitate, and organize with us today.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">UIUC YDSA</h3>
+                <p class="footer-tagline">Solidarity Forever.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="poli-ed.html">Poli-Ed</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/uiucydsa/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.cudsa.red" target="_blank">CU YDSA</a></li>
+                        <li><a href="mailto:contact@uiucydsa.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> UIUC YDSA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

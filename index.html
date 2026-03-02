@@ -7,7 +7,8 @@
   <title>LWSC — Student Organization</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -61,7 +62,7 @@
   </section>
 
   <!-- ═══ CARD GRID (Person 1) ════════════════════════════ -->
-  <section id="cards">
+  <section style="background-color: white" id="cards">
     <div class="cards-grid">
 
       <a href="#about" class="card">
@@ -71,7 +72,7 @@
         <span class="card-arrow">→</span>
       </a>
 
-      <a href="#team" class="card">
+      <a href="#team" class="card-2">
         <div class="card-icon">02</div>
         <h3 class="card-title">Meet the Team</h3>
         <p class="card-desc">Get to know the members and leaders driving our work forward.</p>
@@ -85,7 +86,7 @@
         <span class="card-arrow">→</span>
       </a>
 
-      <a href="#contact" class="card card--accent">
+      <a href="#contact" class="card-2 card--accent">
         <div class="card-icon">04</div>
         <h3 class="card-title">Join Us</h3>
         <p class="card-desc">Become a member and be part of the change we're making on campus.</p>
@@ -116,7 +117,7 @@
   </section>
 
   <!-- ═══ MEET THE TEAM ════════════════════════════════════ -->
-  <section id="team" class="team-section">
+  <section style="background-color: white" id="team" class="team-section">
     <div class="content-container">
       <h2 class="section-title">Meet the <span>Team</span></h2>
       <p class="section-text">
@@ -155,59 +156,79 @@
   <section id="contact"></section>
 
   <!-- ═══ FOOTER (Person 1) ════════════════════════════════ -->
-  <footer>
-
-    <!-- Join Us Signup -->
-    <div class="footer-signup">
-      <div class="footer-signup-text">
-        <h3>Stay in the loop.</h3>
-        <p>Get updates on events, announcements, and ways to get involved.</p>
-      </div>
-      <form class="signup-form" id="signupForm">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <button type="submit" class="btn-primary">Sign Up</button>
-      </form>
-      <p class="signup-success" id="signupSuccess">🎉 You're in! We'll be in touch soon.</p>
-    </div>
-
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="nav-logo">LWSC</span>
-        <p>
-          <!-- TODO: Short org description for footer -->
-          Empowering students to connect, grow, and lead. Est. at University of Illinois Urbana-Champaign.
-        </p>
+  <footer class="footer">
+    <div class="content-container">
+      <!-- Join Us Signup -->
+      <div class="footer-signup">
+        <div class="footer-signup-text">
+          <h3>Stay in the loop.</h3>
+          <p>Get updates on events, announcements, and ways to get involved.</p>
+        </div>
+        <form class="signup-form" id="signupForm">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <button type="submit" class="btn-primary">Sign Up</button>
+        </form>
+        <p class="signup-success" id="signupSuccess">🎉 You're in! We'll be in touch soon.</p>
       </div>
 
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#events">Events</a></li>
-        </ul>
-      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="nav-logo">LWSC</h3>
+          <p>
+            <!-- TODO: Short org description for footer -->
+            Empowering students to connect, grow, and lead. Est. at University of Illinois Urbana-Champaign.
+          </p>
+        </div>
 
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <ul>
-          <!-- TODO: Add real social links -->
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
+        <div class="footer-col link-group">
+          <h4 style="color: var(--clr-brand); font-size: 1.25rem; margin-bottom: 1.5rem;">Navigate</h4>
+          <ul style="list-style: none; display: grid; gap: 0.8rem;">
+            <li><a href="#hero"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">Home</a>
+            </li>
+            <li><a href="#about"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">About</a>
+            </li>
+            <li><a href="#team"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">Team</a>
+            </li>
+            <li><a href="#events"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">Events</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col link-group">
+          <h4 style="color: var(--clr-brand); font-size: 1.25rem; margin-bottom: 1.5rem;">Connect</h4>
+          <ul style="list-style: none; display: grid; gap: 0.8rem;">
+            <!-- TODO: Add real social links -->
+            <li><a href="#"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">Instagram</a>
+            </li>
+            <li><a href="#"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">LinkedIn</a>
+            </li>
+            <li><a href="#"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">Discord</a>
+            </li>
+            <li><a href="#contact"
+                style="color: #ccc; font-weight: 700; font-family: var(--font-display); text-transform: uppercase;">Contact
+                Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2025 LWSC Student Organization. All rights reserved.</p>
-      <div class="footer-socials">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Discord</a>
+      <div class="content-container"
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <p>© 2025 LWSC Student Organization. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Discord</a>
+        </div>
       </div>
     </div>
   </footer>
