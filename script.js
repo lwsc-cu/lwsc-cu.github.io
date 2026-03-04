@@ -42,5 +42,52 @@ if (signupForm) {
   });
 }
 
+// ── Event expand/collapse ──
+function toggleEvent(el) {
+  el.classList.toggle('open');
+}
+
+// ── Past Events expand/collapse ──
+function togglePastEvent(el) {
+  el.classList.toggle('open');
+}
+
+// ── Slideshow auto-advance ──
+function initSlideshows() {
+  document.querySelectorAll('.slideshow').forEach(show => {
+    const slides = show.querySelector('.slides');
+    const imgs = slides.querySelectorAll('img');
+    const dotsContainer = show.querySelector('.slide-dots');
+    let current = 0;
+
+    // Build dots
+    imgs.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('slide-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goTo(i);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    function goTo(index) {
+      current = index;
+      slides.style.transform = `translateX(-${current * 100}%)`;
+      dotsContainer.querySelectorAll('.slide-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    // Auto advance every 3 seconds
+    setInterval(() => {
+      goTo((current + 1) % imgs.length);
+    }, 3000);
+  });
+}
+
+initSlideshows();
+
 // ── Responsive: collapse cards to 2 col on tablet ────────
 // (CSS handles mobile, this adjusts mid-size screens via JS if needed)
